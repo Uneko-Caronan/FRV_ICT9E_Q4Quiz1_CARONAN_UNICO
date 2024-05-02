@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://s+cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family+Dancing+Script">
+
+    <style>
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+        img {
+            width: 300px; 
+            height: auto; 
+            border-radius: 10px; 
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+        body {
+            background-color: ; 
+            font-family: Arial, sans-serif; 
+            color: #333; 
+            margin: 1; 
+            padding: 1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login Page</h1>
+        <div class="col-md-10">
+            <img id="logo" src="https://img.lazcdn.com/g/ff/kf/S8174edb598304709b2f87756330aaba04.jpg_720x720q80.jpg" alt="Logo"><br><br>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+                <button type="submit" id="loginButton" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript and stuff
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'Unico999' && password === '999') { // this is the User and Passsword
+                window.location.href = 'Page%202%20Quiz%201.html';
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
